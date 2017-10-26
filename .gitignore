@@ -3,7 +3,7 @@
 admin/config.php
 storage/cache/
 storage/cache_backups/
-
+storage/logs/
 
 
 !index.html
