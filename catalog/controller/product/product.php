@@ -21,9 +21,6 @@ class ControllerProductProduct extends Controller {
 
 			$category_id = (int)array_pop($parts);
 
-			dd($category_id);
-			die();
-
 			foreach ($parts as $path_id) {
 				if (!$path) {
 					$path = $path_id;

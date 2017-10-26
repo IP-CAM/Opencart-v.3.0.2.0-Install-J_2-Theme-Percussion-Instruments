@@ -215,6 +215,9 @@
             </div>
           </div>
         </div>
+
+
+
         {% if column_left or column_right %}
           {% set class = 'col-sm-6' %}
         {% else %}
@@ -272,6 +275,37 @@
               </div>
               <script>Journal.countdown($('.right .countdown'), '{{ date_end }}');</script>
             {% endif %}
+
+            {# muestro tiempos de entrega del producto #}
+
+              <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>
+                <meta itemprop="priceCurrency" content="{{ journal2.settings.get('product_price_currency') }}"/>
+                <meta itemprop="price" content="{{ journal2.settings.get('product_price') }}"/>
+
+
+                <li class="product-price">
+                  Tiempo Entrega:
+                  {% for cat in journal2.settings.get('data_categorias') %}
+                    {% if cat.category_id == '76' %}
+                        INMEDIATA
+                    {% elseif cat.category_id == '77' %}
+                        5 a 10 días
+                    {% elseif cat.category_id == '85' %}
+                        15 a 20 días
+                    {% elseif cat.category_id == '92' %}
+                        25 a 35 días
+                    {% endif %}
+                  {% endfor %}
+                </li>
+
+                <li class="price-tax">Normalmente cumlimos con dicho tiempo de entrega, pero de todas maneras si querés asegurarte si tenemos en stock y saber con precisión el tiempo,
+                nos podes enviar un WhatsApp (+54 9 11 5140 8258)</li>
+
+
+              </ul>
+
+
             {% if price %}
               <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                 <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>
@@ -299,6 +333,8 @@
                 {% endfor %}
               </ul>
             {% endif %}
+
+
             {% if options %}
               <div class="options {{ journal2.settings.get('product_page_options_push_classes') }}">
                 <h3>{{ text_option }}</h3>

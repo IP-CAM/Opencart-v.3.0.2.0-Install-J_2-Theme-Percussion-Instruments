@@ -41,7 +41,12 @@ class ControllerJournal2ProductTabs extends Controller {
         $recently_viewed = array_splice($recently_viewed, 0, $limit);
         setcookie('jrv', implode(',', $recently_viewed), time() + 60 * 60 * 24 * 30, '/', $this->request->server['HTTP_HOST']);
 
+
+        // acá tengo el mpn que es donde quiero poner la url de mercadopago para pagar por ahí
         $product_info = $this->model_catalog_product->getProduct($product_id);
+
+        $categories = $this->model_catalog_product->getCategories($product_info['product_id']);
+
 
         $tabs = $this->model_journal2_module->getProductTabs($product_id, $product_info);
         $tabs = Journal2Utils::sortArray($tabs);
@@ -129,6 +134,7 @@ class ControllerJournal2ProductTabs extends Controller {
             array_push($$var, $data);
         }
 
+        $this->journal2->settings->set('data_categorias', $categories);
         $this->journal2->settings->set('additional_product_tabs', $tab_tab);
         $this->journal2->settings->set('additional_product_description_top', $tab_desc_top);
         $this->journal2->settings->set('additional_product_description_bottom', $tab_desc_bottom);
