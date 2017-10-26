@@ -754,45 +754,48 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
         echo "            </div>
           </div>
         </div>
+
+
+
         ";
-        // line 218
+        // line 221
         if (((isset($context["column_left"]) ? $context["column_left"] : null) || (isset($context["column_right"]) ? $context["column_right"] : null))) {
-            // line 219
+            // line 222
             echo "          ";
             $context["class"] = "col-sm-6";
-            // line 220
+            // line 223
             echo "        ";
         } else {
-            // line 221
+            // line 224
             echo "          ";
             $context["class"] = "col-sm-4";
-            // line 222
+            // line 225
             echo "        ";
         }
-        // line 223
+        // line 226
         echo "        <div class=\"right\">
           ";
-        // line 224
+        // line 227
         if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_page_title_position", 1 => "top"), "method") == "right")) {
-            // line 225
+            // line 228
             echo "            <h1 class=\"heading-title\" itemprop=\"name\">";
             echo (isset($context["heading_title"]) ? $context["heading_title"] : null);
             echo "</h1>
           ";
         }
-        // line 227
+        // line 230
         echo "          <div id=\"product\" class=\"product-options\">
             ";
-        // line 228
+        // line 231
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "additional_product_description_top", 1 => array()), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["tab"]) {
-            // line 229
+            // line 232
             echo "              <div class=\"journal-custom-tab\">
                 ";
-            // line 230
+            // line 233
             if ($this->getAttribute($context["tab"], "has_icon", array())) {
-                // line 231
+                // line 234
                 echo "                  <div class=\"block-icon block-icon-left\" style=\"";
                 echo $this->getAttribute($context["tab"], "icon_css", array());
                 echo "\">";
@@ -800,16 +803,16 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo "</div>
                 ";
             }
-            // line 233
+            // line 236
             echo "                ";
             if ($this->getAttribute($context["tab"], "name", array())) {
-                // line 234
+                // line 237
                 echo "                  <h3>";
                 echo $this->getAttribute($context["tab"], "name", array());
                 echo "</h3>
                 ";
             }
-            // line 236
+            // line 239
             echo "                ";
             echo $this->getAttribute($context["tab"], "content", array());
             echo "
@@ -819,12 +822,12 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tab'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 239
+        // line 242
         echo "            <ul class=\"list-unstyled description\">
               ";
-        // line 240
+        // line 243
         if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_views"), "method")) {
-            // line 241
+            // line 244
             echo "                <li class=\"product-views-count\">";
             echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_page_options_views_text"), "method");
             echo ": ";
@@ -832,17 +835,17 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             echo "</li>
               ";
         }
-        // line 243
+        // line 246
         echo "              ";
         if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "manufacturer_image"), "method") == "on")) {
-            // line 244
+            // line 247
             echo "                <li class=\"brand-logo\">
                   <a href=\"";
-            // line 245
+            // line 248
             echo (isset($context["manufacturers"]) ? $context["manufacturers"] : null);
             echo "\" class=\"brand-image\">
                     <img src=\"";
-            // line 246
+            // line 249
             echo (isset($context["manufacturer_image"]) ? $context["manufacturer_image"] : null);
             echo "\" width=\"";
             echo (isset($context["manufacturer_image_width"]) ? $context["manufacturer_image_width"] : null);
@@ -853,27 +856,27 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             echo "\"/>
                   </a>
                   ";
-            // line 248
+            // line 251
             if ((isset($context["manufacturer_image_name"]) ? $context["manufacturer_image_name"] : null)) {
-                // line 249
+                // line 252
                 echo "                    <a href=\"";
                 echo (isset($context["manufacturers"]) ? $context["manufacturers"] : null);
                 echo "\" class=\"brand-logo-text\">
                       ";
-                // line 250
+                // line 253
                 echo (isset($context["manufacturer_image_name"]) ? $context["manufacturer_image_name"] : null);
                 echo "
                     </a>
                   ";
             }
-            // line 253
+            // line 256
             echo "                </li>
               ";
         } else {
-            // line 255
+            // line 258
             echo "                ";
             if ((isset($context["manufacturer"]) ? $context["manufacturer"] : null)) {
-                // line 256
+                // line 259
                 echo "                  <li class=\"p-brand\">";
                 echo (isset($context["text_manufacturer"]) ? $context["text_manufacturer"] : null);
                 echo " <a href=\"";
@@ -883,19 +886,19 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo "</a></li>
                 ";
             }
-            // line 258
+            // line 261
             echo "              ";
         }
-        // line 259
+        // line 262
         echo "              <li class=\"p-model\">";
         echo (isset($context["text_model"]) ? $context["text_model"] : null);
         echo " <span class=\"p-model\" itemprop=\"model\">";
         echo (isset($context["model"]) ? $context["model"] : null);
         echo "</span></li>
               ";
-        // line 260
+        // line 263
         if ((isset($context["reward"]) ? $context["reward"] : null)) {
-            // line 261
+            // line 264
             echo "                <li class=\"p-rewards\">";
             echo (isset($context["text_reward"]) ? $context["text_reward"] : null);
             echo " <span class=\"p-rewards\">";
@@ -903,7 +906,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             echo "</span></li>
               ";
         }
-        // line 263
+        // line 266
         echo "              <li class=\"p-stock\">";
         echo (isset($context["text_stock"]) ? $context["text_stock"] : null);
         echo " <span class=\"journal-stock ";
@@ -913,75 +916,137 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
         echo "</span></li>
             </ul>
             ";
-        // line 265
+        // line 268
         if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_sold"), "method")) {
-            // line 266
+            // line 269
             echo "              <div class=\"product-sold-count-text\">";
             echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_sold"), "method");
             echo "</div>
             ";
         }
-        // line 268
+        // line 271
         echo "            ";
         if (((isset($context["date_end"]) ? $context["date_end"] : null) && ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "show_countdown_product_page", 1 => "on"), "method") == "on"))) {
-            // line 269
+            // line 272
             echo "              <div class=\"countdown-wrapper\">
                 <div class=\"expire-text\">";
-            // line 270
+            // line 273
             echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "countdown_product_page_title"), "method");
             echo "</div>
                 <div class=\"countdown\"></div>
               </div>
               <script>Journal.countdown(\$('.right .countdown'), '";
-            // line 273
+            // line 276
             echo (isset($context["date_end"]) ? $context["date_end"] : null);
             echo "');</script>
             ";
         }
-        // line 275
-        echo "            ";
+        // line 278
+        echo "
+            ";
+        // line 280
+        echo "
+              <ul class=\"list-unstyled price\" itemprop=\"offers\" itemscope itemtype=\"http://schema.org/Offer\">
+                <meta itemprop=\"itemCondition\" content=\"http://schema.org/NewCondition\"/>
+                <meta itemprop=\"priceCurrency\" content=\"";
+        // line 283
+        echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_price_currency"), "method");
+        echo "\"/>
+                <meta itemprop=\"price\" content=\"";
+        // line 284
+        echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_price"), "method");
+        echo "\"/>
+
+
+                <li class=\"product-price\">
+                  Tiempo Entrega:
+                  ";
+        // line 289
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "data_categorias"), "method"));
+        foreach ($context['_seq'] as $context["_key"] => $context["cat"]) {
+            // line 290
+            echo "                    ";
+            if (($this->getAttribute($context["cat"], "category_id", array()) == "76")) {
+                // line 291
+                echo "                        INMEDIATA
+                    ";
+            } elseif (($this->getAttribute(            // line 292
+$context["cat"], "category_id", array()) == "77")) {
+                // line 293
+                echo "                        5 a 10 días
+                    ";
+            } elseif (($this->getAttribute(            // line 294
+$context["cat"], "category_id", array()) == "85")) {
+                // line 295
+                echo "                        15 a 20 días
+                    ";
+            } elseif (($this->getAttribute(            // line 296
+$context["cat"], "category_id", array()) == "92")) {
+                // line 297
+                echo "                        25 a 35 días
+                    ";
+            }
+            // line 299
+            echo "                  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['cat'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 300
+        echo "                </li>
+
+                <li class=\"price-tax\">Normalmente cumlimos con dicho tiempo de entrega, pero de todas maneras si querés asegurarte si tenemos en stock y saber con precisión el tiempo,
+                nos podes enviar un WhatsApp (+54 9 11 5140 8258)</li>
+
+
+              </ul>
+
+
+            ";
+        // line 309
         if ((isset($context["price"]) ? $context["price"] : null)) {
-            // line 276
+            // line 310
             echo "              <ul class=\"list-unstyled price\" itemprop=\"offers\" itemscope itemtype=\"http://schema.org/Offer\">
                 <meta itemprop=\"itemCondition\" content=\"http://schema.org/NewCondition\"/>
                 <meta itemprop=\"priceCurrency\" content=\"";
-            // line 278
+            // line 312
             echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_price_currency"), "method");
             echo "\"/>
                 <meta itemprop=\"price\" content=\"";
-            // line 279
+            // line 313
             echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_price"), "method");
             echo "\"/>
                 ";
-            // line 280
+            // line 314
             if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_in_stock"), "method") == "yes")) {
-                // line 281
+                // line 315
                 echo "                  <link itemprop=\"availability\" href=\"http://schema.org/InStock\"/>
                 ";
             }
-            // line 283
+            // line 317
             echo "                ";
             if ( !(isset($context["special"]) ? $context["special"] : null)) {
-                // line 284
+                // line 318
                 echo "                  <li class=\"product-price\">";
                 echo (isset($context["price"]) ? $context["price"] : null);
                 echo "</li>
                 ";
             } else {
-                // line 286
+                // line 320
                 echo "                  <li class=\"price-old\">";
                 echo (isset($context["price"]) ? $context["price"] : null);
                 echo "</li>
                   <li class=\"price-new\">";
-                // line 287
+                // line 321
                 echo (isset($context["special"]) ? $context["special"] : null);
                 echo "</li>
                 ";
             }
-            // line 289
+            // line 323
             echo "                ";
             if ((isset($context["tax"]) ? $context["tax"] : null)) {
-                // line 290
+                // line 324
                 echo "                  <li class=\"price-tax\">";
                 echo (isset($context["text_tax"]) ? $context["text_tax"] : null);
                 echo " ";
@@ -989,13 +1054,13 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo "</li>
                 ";
             }
-            // line 292
+            // line 326
             echo "                ";
             if ((isset($context["points"]) ? $context["points"] : null)) {
-                // line 293
+                // line 327
                 echo "                  <li class=\"reward\">
                     <small>";
-                // line 294
+                // line 328
                 echo (isset($context["text_points"]) ? $context["text_points"] : null);
                 echo " ";
                 echo (isset($context["points"]) ? $context["points"] : null);
@@ -1003,12 +1068,12 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                   </li>
                 ";
             }
-            // line 297
+            // line 331
             echo "                ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["discounts"]) ? $context["discounts"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["discount"]) {
-                // line 298
+                // line 332
                 echo "                  <li class=\"discounts\">";
                 echo $this->getAttribute($context["discount"], "quantity", array());
                 echo (isset($context["text_discount"]) ? $context["text_discount"] : null);
@@ -1019,30 +1084,33 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['discount'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 300
+            // line 334
             echo "              </ul>
             ";
         }
-        // line 302
-        echo "            ";
+        // line 336
+        echo "
+
+            ";
+        // line 338
         if ((isset($context["options"]) ? $context["options"] : null)) {
-            // line 303
+            // line 339
             echo "              <div class=\"options ";
             echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_page_options_push_classes"), "method");
             echo "\">
                 <h3>";
-            // line 304
+            // line 340
             echo (isset($context["text_option"]) ? $context["text_option"] : null);
             echo "</h3>
                 ";
-            // line 305
+            // line 341
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["options"]) ? $context["options"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["option"]) {
-                // line 306
+                // line 342
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "select")) {
-                    // line 307
+                    // line 343
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1051,58 +1119,58 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\" for=\"input-option";
-                    // line 308
+                    // line 344
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\">";
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <select name=\"option[";
-                    // line 309
+                    // line 345
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "]\" id=\"input-option";
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\" class=\"form-control\">
                         <option value=\"\">";
-                    // line 310
+                    // line 346
                     echo (isset($context["text_select"]) ? $context["text_select"] : null);
                     echo "</option>
                         ";
-                    // line 311
+                    // line 347
                     $context['_parent'] = $context;
                     $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["option"], "product_option_value", array()));
                     foreach ($context['_seq'] as $context["_key"] => $context["option_value"]) {
-                        // line 312
+                        // line 348
                         echo "                          <option value=\"";
                         echo $this->getAttribute($context["option_value"], "product_option_value_id", array());
                         echo "\">";
                         echo $this->getAttribute($context["option_value"], "name", array());
                         echo "
                             ";
-                        // line 313
+                        // line 349
                         if ($this->getAttribute($context["option_value"], "price", array())) {
-                            // line 314
+                            // line 350
                             echo "                              (";
                             echo $this->getAttribute($context["option_value"], "price_prefix", array());
                             echo $this->getAttribute($context["option_value"], "price", array());
                             echo ")
                             ";
                         }
-                        // line 315
+                        // line 351
                         echo " </option>
                         ";
                     }
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option_value'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 317
+                    // line 353
                     echo "                      </select>
                     </div>
                   ";
                 }
-                // line 320
+                // line 356
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "radio")) {
-                    // line 321
+                    // line 357
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1111,27 +1179,27 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\">";
-                    // line 322
+                    // line 358
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <div id=\"input-option";
-                    // line 323
+                    // line 359
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\"> ";
                     $context['_parent'] = $context;
                     $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["option"], "product_option_value", array()));
                     foreach ($context['_seq'] as $context["_key"] => $context["option_value"]) {
-                        // line 324
+                        // line 360
                         echo "                          <div class=\"radio\">
                             <label>
                               <input type=\"radio\" name=\"option[";
-                        // line 326
+                        // line 362
                         echo $this->getAttribute($context["option"], "product_option_id", array());
                         echo "]\" value=\"";
                         echo $this->getAttribute($context["option_value"], "product_option_value_id", array());
                         echo "\"/>
                               ";
-                        // line 327
+                        // line 363
                         if ($this->getAttribute($context["option_value"], "image", array())) {
                             echo " <img src=\"";
                             echo $this->getAttribute($context["option_value"], "image", array());
@@ -1147,21 +1215,21 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                             }
                             echo "\" class=\"img-thumbnail\"/> ";
                         }
-                        // line 328
+                        // line 364
                         echo "                              ";
                         echo $this->getAttribute($context["option_value"], "name", array());
                         echo "
                               ";
-                        // line 329
+                        // line 365
                         if ($this->getAttribute($context["option_value"], "price", array())) {
-                            // line 330
+                            // line 366
                             echo "                                (";
                             echo $this->getAttribute($context["option_value"], "price_prefix", array());
                             echo $this->getAttribute($context["option_value"], "price", array());
                             echo ")
                               ";
                         }
-                        // line 331
+                        // line 367
                         echo " </label>
                           </div>
                         ";
@@ -1169,15 +1237,15 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option_value'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 333
+                    // line 369
                     echo " </div>
                     </div>
                   ";
                 }
-                // line 336
+                // line 372
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "checkbox")) {
-                    // line 337
+                    // line 373
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1186,27 +1254,27 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\">";
-                    // line 338
+                    // line 374
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <div id=\"input-option";
-                    // line 339
+                    // line 375
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\"> ";
                     $context['_parent'] = $context;
                     $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["option"], "product_option_value", array()));
                     foreach ($context['_seq'] as $context["_key"] => $context["option_value"]) {
-                        // line 340
+                        // line 376
                         echo "                          <div class=\"checkbox\">
                             <label>
                               <input type=\"checkbox\" name=\"option[";
-                        // line 342
+                        // line 378
                         echo $this->getAttribute($context["option"], "product_option_id", array());
                         echo "][]\" value=\"";
                         echo $this->getAttribute($context["option_value"], "product_option_value_id", array());
                         echo "\"/>
                               ";
-                        // line 343
+                        // line 379
                         if ($this->getAttribute($context["option_value"], "image", array())) {
                             echo " <img src=\"";
                             echo $this->getAttribute($context["option_value"], "image", array());
@@ -1222,21 +1290,21 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                             }
                             echo "\" class=\"img-thumbnail\"/> ";
                         }
-                        // line 344
+                        // line 380
                         echo "                              ";
                         echo $this->getAttribute($context["option_value"], "name", array());
                         echo "
                               ";
-                        // line 345
+                        // line 381
                         if ($this->getAttribute($context["option_value"], "price", array())) {
-                            // line 346
+                            // line 382
                             echo "                                (";
                             echo $this->getAttribute($context["option_value"], "price_prefix", array());
                             echo $this->getAttribute($context["option_value"], "price", array());
                             echo ")
                               ";
                         }
-                        // line 347
+                        // line 383
                         echo " </label>
                           </div>
                         ";
@@ -1244,15 +1312,15 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option_value'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 349
+                    // line 385
                     echo " </div>
                     </div>
                   ";
                 }
-                // line 352
+                // line 388
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "text")) {
-                    // line 353
+                    // line 389
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1261,13 +1329,13 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\" for=\"input-option";
-                    // line 354
+                    // line 390
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\">";
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <input type=\"text\" name=\"option[";
-                    // line 355
+                    // line 391
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "]\" value=\"";
                     echo $this->getAttribute($context["option"], "value", array());
@@ -1279,10 +1347,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     </div>
                   ";
                 }
-                // line 358
+                // line 394
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "textarea")) {
-                    // line 359
+                    // line 395
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1291,13 +1359,13 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\" for=\"input-option";
-                    // line 360
+                    // line 396
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\">";
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <textarea name=\"option[";
-                    // line 361
+                    // line 397
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "]\" rows=\"5\" placeholder=\"";
                     echo $this->getAttribute($context["option"], "name", array());
@@ -1309,10 +1377,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     </div>
                   ";
                 }
-                // line 364
+                // line 400
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "file")) {
-                    // line 365
+                    // line 401
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1321,11 +1389,11 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\">";
-                    // line 366
+                    // line 402
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <button type=\"button\" id=\"button-upload";
-                    // line 367
+                    // line 403
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\" data-loading-text=\"";
                     echo (isset($context["text_loading"]) ? $context["text_loading"] : null);
@@ -1333,7 +1401,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo (isset($context["button_upload"]) ? $context["button_upload"] : null);
                     echo "</button>
                       <input type=\"hidden\" name=\"option[";
-                    // line 368
+                    // line 404
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "]\" value=\"\" id=\"input-option";
                     echo $this->getAttribute($context["option"], "product_option_id", array());
@@ -1341,10 +1409,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     </div>
                   ";
                 }
-                // line 371
+                // line 407
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "date")) {
-                    // line 372
+                    // line 408
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1353,14 +1421,14 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\" for=\"input-option";
-                    // line 373
+                    // line 409
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\">";
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <div class=\"input-group date\">
                         <input type=\"text\" name=\"option[";
-                    // line 375
+                    // line 411
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "]\" value=\"";
                     echo $this->getAttribute($context["option"], "value", array());
@@ -1373,10 +1441,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     </div>
                   ";
                 }
-                // line 381
+                // line 417
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "datetime")) {
-                    // line 382
+                    // line 418
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1385,14 +1453,14 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\" for=\"input-option";
-                    // line 383
+                    // line 419
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\">";
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <div class=\"input-group datetime\">
                         <input type=\"text\" name=\"option[";
-                    // line 385
+                    // line 421
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "]\" value=\"";
                     echo $this->getAttribute($context["option"], "value", array());
@@ -1405,10 +1473,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     </div>
                   ";
                 }
-                // line 391
+                // line 427
                 echo "                  ";
                 if (($this->getAttribute($context["option"], "type", array()) == "time")) {
-                    // line 392
+                    // line 428
                     echo "                    <div class=\"option form-group";
                     if ($this->getAttribute($context["option"], "required", array())) {
                         echo " required ";
@@ -1417,14 +1485,14 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo $this->getAttribute($context["option"], "type", array());
                     echo "\">
                       <label class=\"control-label\" for=\"input-option";
-                    // line 393
+                    // line 429
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "\">";
                     echo $this->getAttribute($context["option"], "name", array());
                     echo "</label>
                       <div class=\"input-group time\">
                         <input type=\"text\" name=\"option[";
-                    // line 395
+                    // line 431
                     echo $this->getAttribute($context["option"], "product_option_id", array());
                     echo "]\" value=\"";
                     echo $this->getAttribute($context["option"], "value", array());
@@ -1437,38 +1505,38 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     </div>
                   ";
                 }
-                // line 401
+                // line 437
                 echo "                ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['option'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 402
+            // line 438
             echo "              </div>
               <script>Journal.enableSelectOptionAsButtonsList();</script>
             ";
         }
-        // line 405
+        // line 441
         echo "            ";
         if ((isset($context["recurrings"]) ? $context["recurrings"] : null)) {
-            // line 406
+            // line 442
             echo "              <hr>
               <h3>";
-            // line 407
+            // line 443
             echo (isset($context["text_payment_recurring"]) ? $context["text_payment_recurring"] : null);
             echo "</h3>
               <div class=\"form-group required\">
                 <select name=\"recurring_id\" class=\"form-control\">
                   <option value=\"\">";
-            // line 410
+            // line 446
             echo (isset($context["text_select"]) ? $context["text_select"] : null);
             echo "</option>
                   ";
-            // line 411
+            // line 447
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["recurrings"]) ? $context["recurrings"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["recurring"]) {
-                // line 412
+                // line 448
                 echo "                    <option value=\"";
                 echo $this->getAttribute($context["recurring"], "recurring_id", array());
                 echo "\">";
@@ -1479,13 +1547,13 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['recurring'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 414
+            // line 450
             echo "                </select>
                 <div class=\"help-block\" id=\"recurring-description\"></div>
               </div>
             ";
         }
-        // line 418
+        // line 454
         echo "            <div class=\"form-group cart ";
         if (((isset($context["labels"]) ? $context["labels"] : null) && $this->getAttribute((isset($context["labels"]) ? $context["labels"] : null), "outofstock", array()))) {
             echo " outofstock ";
@@ -1493,14 +1561,14 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
         echo "\">
               <div>
                 ";
-        // line 420
+        // line 456
         if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "hide_add_to_cart_button"), "method")) {
-            // line 421
+            // line 457
             echo "                  ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "additional_product_enquiry", 1 => array()), "method"));
             foreach ($context['_seq'] as $context["_key"] => $context["tab"]) {
-                // line 422
+                // line 458
                 echo "                    <div>";
                 echo $this->getAttribute($context["tab"], "content", array());
                 echo "</div>
@@ -1509,26 +1577,26 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tab'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 424
+            // line 460
             echo "                  <input type=\"hidden\" name=\"product_id\" value=\"";
             echo (isset($context["product_id"]) ? $context["product_id"] : null);
             echo "\"/>
                 ";
         } else {
-            // line 426
+            // line 462
             echo "                  <span class=\"qty\">
               <label class=\"control-label text-qty\" for=\"input-quantity\">";
-            // line 427
+            // line 463
             echo (isset($context["entry_qty"]) ? $context["entry_qty"] : null);
             echo "</label>
               <input type=\"text\" name=\"quantity\" value=\"";
-            // line 428
+            // line 464
             echo (isset($context["minimum"]) ? $context["minimum"] : null);
             echo "\" size=\"2\" data-min-value=\"";
             echo (isset($context["minimum"]) ? $context["minimum"] : null);
             echo "\" id=\"input-quantity\" class=\"form-control\"/>
               <input type=\"hidden\" name=\"product_id\" value=\"";
-            // line 429
+            // line 465
             echo (isset($context["product_id"]) ? $context["product_id"] : null);
             echo "\"/>
               <script>
@@ -1558,36 +1626,36 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
               </script>
               </span>
                   <button type=\"button\" id=\"button-cart\" data-loading-text=\"";
-            // line 456
+            // line 492
             echo (isset($context["text_loading"]) ? $context["text_loading"] : null);
             echo "\" class=\"button\"><span class=\"button-cart-text\">";
             echo (isset($context["button_cart"]) ? $context["button_cart"] : null);
             echo "</span></button>
                 ";
         }
-        // line 458
+        // line 494
         echo "              </div>
             </div>
             ";
-        // line 460
+        // line 496
         if (((isset($context["minimum"]) ? $context["minimum"] : null) > 1)) {
-            // line 461
+            // line 497
             echo "              <div class=\"alert alert-info information\"><i class=\"fa fa-info-circle\"></i> ";
             echo (isset($context["text_minimum"]) ? $context["text_minimum"] : null);
             echo "</div>
             ";
         }
-        // line 463
+        // line 499
         echo "            <div class=\"wishlist-compare\">
               <span class=\"links\">
                   <a onclick=\"addToWishList('";
-        // line 465
+        // line 501
         echo (isset($context["product_id"]) ? $context["product_id"] : null);
         echo "');\">";
         echo (isset($context["button_wishlist"]) ? $context["button_wishlist"] : null);
         echo "</a>
                   <a onclick=\"addToCompare('";
-        // line 466
+        // line 502
         echo (isset($context["product_id"]) ? $context["product_id"] : null);
         echo "');\">";
         echo (isset($context["button_compare"]) ? $context["button_compare"] : null);
@@ -1595,23 +1663,23 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
               </span>
             </div>
             ";
-        // line 469
+        // line 505
         if ((isset($context["review_status"]) ? $context["review_status"] : null)) {
-            // line 470
+            // line 506
             echo "              <div class=\"rating\">
                 <p>";
-            // line 471
+            // line 507
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(1, 5));
             foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                // line 472
+                // line 508
                 echo "                    ";
                 if (((isset($context["rating"]) ? $context["rating"] : null) < $context["i"])) {
                     echo "<span class=\"fa fa-stack\"><i class=\"fa fa-star-o fa-stack-1x\"></i></span>";
                 } else {
                     echo "<span class=\"fa fa-stack\"><i class=\"fa fa-star fa-stack-1x\"></i><i class=\"fa fa-star-o fa-stack-1x\"></i></span>";
                 }
-                // line 473
+                // line 509
                 echo "                  ";
             }
             $_parent = $context['_parent'];
@@ -1625,24 +1693,24 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
               </div>
             ";
         }
-        // line 476
+        // line 512
         echo "            ";
         if ((($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "share_buttons_status"), "method") && ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "share_buttons_position"), "method") == "right")) && (twig_length_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "config_share_buttons", 1 => array()), "method")) > 0))) {
-            // line 477
+            // line 513
             echo "              <div class=\"social share-this\">
                 <div class=\"social-loaded\">
                   <script type=\"text/javascript\">var switchTo5x = true;</script>
                   <script type=\"text/javascript\" src=\"https://ws.sharethis.com/button/buttons.js\"></script>
                   <script type=\"text/javascript\">stLight.options({publisher: \"";
-            // line 481
+            // line 517
             echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "share_buttons_account_key"), "method");
             echo "\", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
                   ";
-            // line 482
+            // line 518
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "config_share_buttons", 1 => array()), "method"));
             foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-                // line 483
+                // line 519
                 echo "                    <span class=\"";
                 echo $this->getAttribute($context["item"], "class", array());
                 echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "share_buttons_style"), "method");
@@ -1654,22 +1722,22 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 485
+            // line 521
             echo "                </div>
               </div>
             ";
         }
-        // line 488
+        // line 524
         echo "            ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "additional_product_description_bottom", 1 => array()), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["tab"]) {
-            // line 489
+            // line 525
             echo "              <div class=\"journal-custom-tab\">
                 ";
-            // line 490
+            // line 526
             if ($this->getAttribute($context["tab"], "has_icon", array())) {
-                // line 491
+                // line 527
                 echo "                  <div class=\"block-icon block-icon-left\" style=\"";
                 echo $this->getAttribute($context["tab"], "icon_css", array());
                 echo "\">";
@@ -1677,16 +1745,16 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo "</div>
                 ";
             }
-            // line 493
+            // line 529
             echo "                ";
             if ($this->getAttribute($context["tab"], "name", array())) {
-                // line 494
+                // line 530
                 echo "                  <h3>";
                 echo $this->getAttribute($context["tab"], "name", array());
                 echo "</h3>
                 ";
             }
-            // line 496
+            // line 532
             echo "                ";
             echo $this->getAttribute($context["tab"], "content", array());
             echo "
@@ -1696,23 +1764,23 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tab'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 499
+        // line 535
         echo "          </div>
         </div>
       </div>
       ";
-        // line 502
+        // line 538
         if ((isset($context["tags"]) ? $context["tags"] : null)) {
-            // line 503
+            // line 539
             echo "        <p class=\"tags\"><b>";
             echo (isset($context["text_tags"]) ? $context["text_tags"] : null);
             echo "</b>
           ";
-            // line 504
+            // line 540
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(0, twig_length_filter($this->env, (isset($context["tags"]) ? $context["tags"] : null))));
             foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                // line 505
+                // line 541
                 echo "            ";
                 if (($context["i"] < (twig_length_filter($this->env, (isset($context["tags"]) ? $context["tags"] : null)) - 1))) {
                     echo " <a href=\"";
@@ -1722,14 +1790,14 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo "</a>,
             ";
                 } else {
-                    // line 506
+                    // line 542
                     echo " <a href=\"";
                     echo $this->getAttribute($this->getAttribute((isset($context["tags"]) ? $context["tags"] : null), $context["i"], array(), "array"), "href", array());
                     echo "\">";
                     echo $this->getAttribute($this->getAttribute((isset($context["tags"]) ? $context["tags"] : null), $context["i"], array(), "array"), "tag", array());
                     echo "</a> ";
                 }
-                // line 507
+                // line 543
                 echo "          ";
             }
             $_parent = $context['_parent'];
@@ -1738,10 +1806,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             echo " </p>
       ";
         }
-        // line 509
+        // line 545
         echo "      ";
         if (((isset($context["products"]) ? $context["products"] : null) && $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_status"), "method"))) {
-            // line 510
+            // line 546
             echo "        <div class=\"box related-products ";
             if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel"), "method")) {
                 echo " journal-carousel ";
@@ -1753,17 +1821,17 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             echo "\">
           <div>
             <div class=\"box-heading\">";
-            // line 512
+            // line 548
             echo (isset($context["text_related"]) ? $context["text_related"] : null);
             echo "</div>
             <div class=\"box-content\">
               ";
-            // line 514
+            // line 550
             if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel"), "method")) {
-                // line 515
+                // line 551
                 echo "              <div class=\"swiper\">
                 <div class=\"swiper-container\" ";
-                // line 516
+                // line 552
                 if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "rtl"), "method")) {
                     echo " dir=\"rtl\" ";
                 }
@@ -1771,12 +1839,12 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                   <div class=\"swiper-wrapper\">
                     ";
             }
-            // line 519
+            // line 555
             echo "                    ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["products"]) ? $context["products"] : null));
             foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-                // line 520
+                // line 556
                 echo "                      <div class=\"product-grid-item ";
                 echo (isset($context["grid_classes"]) ? $context["grid_classes"] : null);
                 echo " ";
@@ -1789,19 +1857,19 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_grid_button_block_button"), "method");
                 echo "\">
                         <div class=\"product-thumb product-wrapper ";
-                // line 521
+                // line 557
                 if (($this->getAttribute($context["product"], "labels", array()) && $this->getAttribute($this->getAttribute($context["product"], "labels", array()), "outofstock", array()))) {
                     echo " outofstock ";
                 }
                 echo "\">
                           <div class=\"image ";
-                // line 522
+                // line 558
                 if ((($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "show_countdown", 1 => "never"), "method") != "never") && $this->getAttribute($context["product"], "date_end", array()))) {
                     echo " has-countdown ";
                 }
                 echo "\">
                             <a href=\"";
-                // line 523
+                // line 559
                 echo $this->getAttribute($context["product"], "href", array());
                 echo "\" ";
                 if ($this->getAttribute($context["product"], "thumb2", array())) {
@@ -1811,7 +1879,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 }
                 echo ">
                               <img class=\"lazy first-image\" width=\"";
-                // line 524
+                // line 560
                 echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "config_image_width"), "method");
                 echo "\" height=\"";
                 echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "config_image_height"), "method");
@@ -1826,11 +1894,11 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo "\"/>
                             </a>
                             ";
-                // line 526
+                // line 562
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["product"], "labels", array()));
                 foreach ($context['_seq'] as $context["label"] => $context["name"]) {
-                    // line 527
+                    // line 563
                     echo "                              <span class=\"label-";
                     echo $context["label"];
                     echo "\"><b>";
@@ -1841,10 +1909,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['label'], $context['name'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 529
+                // line 565
                 echo "                            ";
                 if ((($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_grid_wishlist_icon_position"), "method") == "image") && ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_grid_wishlist_icon_display"), "method") == "icon"))) {
-                    // line 530
+                    // line 566
                     echo "                              <div class=\"wishlist\"><a onclick=\"addToWishList('";
                     echo $this->getAttribute($context["product"], "product_id", array());
                     echo "');\" class=\"hint--top\" data-hint=\"";
@@ -1853,7 +1921,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo (isset($context["button_wishlist"]) ? $context["button_wishlist"] : null);
                     echo "</span></a></div>
                               <div class=\"compare\"><a onclick=\"addToCompare('";
-                    // line 531
+                    // line 567
                     echo $this->getAttribute($context["product"], "product_id", array());
                     echo "');\" class=\"hint--top\" data-hint=\"";
                     echo (isset($context["button_compare"]) ? $context["button_compare"] : null);
@@ -1862,35 +1930,35 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                     echo "</span></a></div>
                             ";
                 }
-                // line 533
+                // line 569
                 echo "                          </div>
                           <div class=\"product-details\">
                             <div class=\"caption\">
                               <h4 class=\"name\"><a href=\"";
-                // line 536
+                // line 572
                 echo $this->getAttribute($context["product"], "href", array());
                 echo "\">";
                 echo $this->getAttribute($context["product"], "name", array());
                 echo "</a></h4>
                               <p class=\"description\">";
-                // line 537
+                // line 573
                 echo $this->getAttribute($context["product"], "description", array());
                 echo "</p>
                               ";
-                // line 538
+                // line 574
                 if ($this->getAttribute($context["product"], "price", array())) {
-                    // line 539
+                    // line 575
                     echo "                                <div class=\"price\">
                                   ";
-                    // line 540
+                    // line 576
                     if ( !$this->getAttribute($context["product"], "special", array())) {
-                        // line 541
+                        // line 577
                         echo "                                    ";
                         echo $this->getAttribute($context["product"], "price", array());
                         echo "
                                   ";
                     } else {
-                        // line 543
+                        // line 579
                         echo "                                    <span class=\"price-old\">";
                         echo $this->getAttribute($context["product"], "price", array());
                         echo "</span> <span class=\"price-new\">";
@@ -1898,51 +1966,51 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                         echo "</span>
                                   ";
                     }
-                    // line 545
+                    // line 581
                     echo "                                </div>
                               ";
                 }
-                // line 547
+                // line 583
                 echo "                              ";
                 if ($this->getAttribute($context["product"], "rating", array())) {
-                    // line 548
+                    // line 584
                     echo "                                <div class=\"rating\">
                                   ";
-                    // line 549
+                    // line 585
                     $context['_parent'] = $context;
                     $context['_seq'] = twig_ensure_traversable(range(1, 5));
                     foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-                        // line 550
+                        // line 586
                         echo "                                    ";
                         if (($this->getAttribute($context["product"], "rating", array()) < $context["i"])) {
-                            // line 551
+                            // line 587
                             echo "                                      <span class=\"fa fa-stack\"><i class=\"fa fa-star-o fa-stack-2x\"></i></span>
                                     ";
                         } else {
-                            // line 553
+                            // line 589
                             echo "                                      <span class=\"fa fa-stack\"><i class=\"fa fa-star fa-stack-2x\"></i><i class=\"fa fa-star-o fa-stack-2x\"></i></span>
                                     ";
                         }
-                        // line 555
+                        // line 591
                         echo "                                  ";
                     }
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 556
+                    // line 592
                     echo "                                </div>
                               ";
                 }
-                // line 558
+                // line 594
                 echo "                            </div>
                             <div class=\"button-group\">
                               ";
-                // line 560
+                // line 596
                 if (call_user_func_array($this->env->getFunction('staticCall')->getCallable(), array("Journal2Utils", "isEnquiryProduct", array(0 => null, 1 => $context["product"])))) {
-                    // line 561
+                    // line 597
                     echo "                                <div class=\"cart enquiry-button\">
                                   <a href=\"javascript:Journal.openPopup('";
-                    // line 562
+                    // line 598
                     echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "enquiry_popup_code"), "method");
                     echo "', '";
                     echo $this->getAttribute($context["product"], "product_id", array());
@@ -1958,14 +2026,14 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                                 </div>
                               ";
                 } else {
-                    // line 565
+                    // line 601
                     echo "                                <div class=\"cart ";
                     if (($this->getAttribute($context["product"], "labels", array()) && $this->getAttribute($this->getAttribute($context["product"], "labels", array()), "outofstock", array()))) {
                         echo " outofstock ";
                     }
                     echo "\">
                                   <a onclick=\"addToCart('";
-                    // line 566
+                    // line 602
                     echo $this->getAttribute($context["product"], "product_id", array());
                     echo "');\" class=\"button hint--top\" data-hint=\"";
                     echo (isset($context["button_cart"]) ? $context["button_cart"] : null);
@@ -1975,7 +2043,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                                 </div>
                               ";
                 }
-                // line 569
+                // line 605
                 echo "                              <div class=\"wishlist\"><a onclick=\"addToWishList('";
                 echo $this->getAttribute($context["product"], "product_id", array());
                 echo "');\" class=\"hint--top\" data-hint=\"";
@@ -1984,7 +2052,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo (isset($context["button_wishlist"]) ? $context["button_wishlist"] : null);
                 echo "</span></a></div>
                               <div class=\"compare\"><a onclick=\"addToCompare('";
-                // line 570
+                // line 606
                 echo $this->getAttribute($context["product"], "product_id", array());
                 echo "');\" class=\"hint--top\" data-hint=\"";
                 echo (isset($context["button_compare"]) ? $context["button_compare"] : null);
@@ -2000,41 +2068,41 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 576
+            // line 612
             echo "                    ";
             if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel"), "method")) {
-                // line 577
+                // line 613
                 echo "                  </div>
                 </div>
                 ";
-                // line 579
+                // line 615
                 if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel"), "method") && ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_arrows"), "method") != "none"))) {
-                    // line 580
+                    // line 616
                     echo "                  <div class=\"swiper-button-next\"></div>
                   <div class=\"swiper-button-prev\"></div>
                 ";
                 }
-                // line 583
+                // line 619
                 echo "                ";
             }
-            // line 584
+            // line 620
             echo "              </div>
               ";
-            // line 585
+            // line 621
             if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel"), "method") && $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_bullets"), "method"))) {
-                // line 586
+                // line 622
                 echo "                <div class=\"swiper-pagination\"></div>
               ";
             }
-            // line 588
+            // line 624
             echo "            </div>
           </div>
         </div>
 
       ";
-            // line 592
+            // line 628
             if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "show_countdown", 1 => "never"), "method") != "never")) {
-                // line 593
+                // line 629
                 echo "        <script>
           \$('.related-products .product-grid-item > div').each(function () {
             var \$new = \$(this).find('.price-new');
@@ -2046,25 +2114,25 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
         </script>
       ";
             }
-            // line 603
+            // line 639
             echo "      ";
             if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel"), "method")) {
-                // line 604
+                // line 640
                 echo "        ";
                 $context["grid"] = call_user_func_array($this->env->getFunction('staticCall')->getCallable(), array("Journal2Utils", "getItemGrid", array(0 => $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_items_per_row"), "method"), 1 => $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "site_width", 1 => 1024), "method"), 2 => $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "config_columns_count", 1 => 0), "method"))));
-                // line 605
+                // line 641
                 echo "        ";
-                $context["grid"] = array(0 => array(0 => 0, 1 => $this->getAttribute(                // line 606
-(isset($context["grid"]) ? $context["grid"] : null), "xs", array())), 1 => array(0 => 470, 1 => $this->getAttribute(                // line 607
-(isset($context["grid"]) ? $context["grid"] : null), "sm", array())), 2 => array(0 => 760, 1 => $this->getAttribute(                // line 608
-(isset($context["grid"]) ? $context["grid"] : null), "md", array())), 3 => array(0 => 980, 1 => $this->getAttribute(                // line 609
-(isset($context["grid"]) ? $context["grid"] : null), "lg", array())), 4 => array(0 => 1100, 1 => $this->getAttribute(                // line 610
+                $context["grid"] = array(0 => array(0 => 0, 1 => $this->getAttribute(                // line 642
+(isset($context["grid"]) ? $context["grid"] : null), "xs", array())), 1 => array(0 => 470, 1 => $this->getAttribute(                // line 643
+(isset($context["grid"]) ? $context["grid"] : null), "sm", array())), 2 => array(0 => 760, 1 => $this->getAttribute(                // line 644
+(isset($context["grid"]) ? $context["grid"] : null), "md", array())), 3 => array(0 => 980, 1 => $this->getAttribute(                // line 645
+(isset($context["grid"]) ? $context["grid"] : null), "lg", array())), 4 => array(0 => 1100, 1 => $this->getAttribute(                // line 646
 (isset($context["grid"]) ? $context["grid"] : null), "xl", array())));
-                // line 612
+                // line 648
                 echo "        <script>
           (function () {
             var grid = \$.parseJSON('";
-                // line 614
+                // line 650
                 echo twig_jsonencode_filter((isset($context["grid"]) ? $context["grid"] : null));
                 echo "');
 
@@ -2092,11 +2160,11 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
               slidesPerGroup: grid[4][1],
               breakpoints: breakpoints,
               spaceBetween: parseInt('";
-                // line 639
+                // line 675
                 echo $this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "product_grid_item_spacing", 1 => "15"), "method");
                 echo "', 10),
               pagination: ";
-                // line 640
+                // line 676
                 if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_bullets"), "method")) {
                     echo " \$('.related-products .swiper-pagination') ";
                 } else {
@@ -2105,7 +2173,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo ",
               paginationClickable: true,
               nextButton: ";
-                // line 642
+                // line 678
                 if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_arrows"), "method") != "none")) {
                     echo " \$('.related-products .swiper-button-next') ";
                 } else {
@@ -2113,7 +2181,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 }
                 echo ",
               prevButton: ";
-                // line 643
+                // line 679
                 if (($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_arrows"), "method") != "none")) {
                     echo " \$('.related-products .swiper-button-prev') ";
                 } else {
@@ -2121,11 +2189,11 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 }
                 echo ",
               autoplay: ";
-                // line 644
+                // line 680
                 echo ((($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_autoplay"), "method") > 0)) ? (4000) : ("false"));
                 echo ",
               autoplayStopOnHover: ";
-                // line 645
+                // line 681
                 if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_pause_on_hover"), "method")) {
                     echo " true ";
                 } else {
@@ -2134,13 +2202,13 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
                 echo ",
               speed: 400,
               touchEventsTarget: ";
-                // line 647
+                // line 683
                 if ($this->getAttribute($this->getAttribute((isset($context["journal2"]) ? $context["journal2"] : null), "settings", array()), "get", array(0 => "related_products_carousel_touchdrag"), "method")) {
                     echo " 'container' ";
                 } else {
                     echo " false ";
                 }
-                // line 648
+                // line 684
                 echo "            };
 
             \$('.related-products .swiper-container').swiper(opts);
@@ -2148,10 +2216,10 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
         </script>
       ";
             }
-            // line 654
+            // line 690
             echo "      ";
         }
-        // line 655
+        // line 691
         echo "      ";
         echo (isset($context["content_bottom"]) ? $context["content_bottom"] : null);
         echo "</div>
@@ -2317,14 +2385,14 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
   });
 
   \$('#review').load('index.php?route=product/product/review&product_id=";
-        // line 817
+        // line 853
         echo (isset($context["product_id"]) ? $context["product_id"] : null);
         echo "');
 
   \$('#button-review').on('click', function () {
     \$.ajax({
       url: 'index.php?route=product/product/write&product_id=";
-        // line 821
+        // line 857
         echo (isset($context["product_id"]) ? $context["product_id"] : null);
         echo "',
       type: 'post',
@@ -2365,7 +2433,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
   });
 //--></script>
 ";
-        // line 859
+        // line 895
         echo (isset($context["footer"]) ? $context["footer"] : null);
         echo "
 ";
@@ -2383,7 +2451,7 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
 
     public function getDebugInfo()
     {
-        return array (  2369 => 859,  2328 => 821,  2321 => 817,  2155 => 655,  2152 => 654,  2144 => 648,  2138 => 647,  2129 => 645,  2125 => 644,  2117 => 643,  2109 => 642,  2100 => 640,  2096 => 639,  2068 => 614,  2064 => 612,  2062 => 610,  2061 => 609,  2060 => 608,  2059 => 607,  2058 => 606,  2056 => 605,  2053 => 604,  2050 => 603,  2038 => 593,  2036 => 592,  2030 => 588,  2026 => 586,  2024 => 585,  2021 => 584,  2018 => 583,  2013 => 580,  2011 => 579,  2007 => 577,  2004 => 576,  1988 => 570,  1979 => 569,  1969 => 566,  1962 => 565,  1946 => 562,  1943 => 561,  1941 => 560,  1937 => 558,  1933 => 556,  1927 => 555,  1923 => 553,  1919 => 551,  1916 => 550,  1912 => 549,  1909 => 548,  1906 => 547,  1902 => 545,  1894 => 543,  1888 => 541,  1886 => 540,  1883 => 539,  1881 => 538,  1877 => 537,  1871 => 536,  1866 => 533,  1857 => 531,  1848 => 530,  1845 => 529,  1834 => 527,  1830 => 526,  1815 => 524,  1805 => 523,  1799 => 522,  1793 => 521,  1780 => 520,  1775 => 519,  1767 => 516,  1764 => 515,  1762 => 514,  1757 => 512,  1745 => 510,  1742 => 509,  1733 => 507,  1726 => 506,  1716 => 505,  1712 => 504,  1707 => 503,  1705 => 502,  1700 => 499,  1690 => 496,  1684 => 494,  1681 => 493,  1673 => 491,  1671 => 490,  1668 => 489,  1663 => 488,  1658 => 485,  1646 => 483,  1642 => 482,  1638 => 481,  1632 => 477,  1629 => 476,  1615 => 473,  1608 => 472,  1604 => 471,  1601 => 470,  1599 => 469,  1591 => 466,  1585 => 465,  1581 => 463,  1575 => 461,  1573 => 460,  1569 => 458,  1562 => 456,  1532 => 429,  1526 => 428,  1522 => 427,  1519 => 426,  1513 => 424,  1504 => 422,  1499 => 421,  1497 => 420,  1489 => 418,  1483 => 414,  1472 => 412,  1468 => 411,  1464 => 410,  1458 => 407,  1455 => 406,  1452 => 405,  1447 => 402,  1441 => 401,  1428 => 395,  1421 => 393,  1412 => 392,  1409 => 391,  1396 => 385,  1389 => 383,  1380 => 382,  1377 => 381,  1364 => 375,  1357 => 373,  1348 => 372,  1345 => 371,  1337 => 368,  1329 => 367,  1325 => 366,  1316 => 365,  1313 => 364,  1301 => 361,  1295 => 360,  1286 => 359,  1283 => 358,  1271 => 355,  1265 => 354,  1256 => 353,  1253 => 352,  1248 => 349,  1240 => 347,  1233 => 346,  1231 => 345,  1226 => 344,  1210 => 343,  1204 => 342,  1200 => 340,  1194 => 339,  1190 => 338,  1181 => 337,  1178 => 336,  1173 => 333,  1165 => 331,  1158 => 330,  1156 => 329,  1151 => 328,  1135 => 327,  1129 => 326,  1125 => 324,  1119 => 323,  1115 => 322,  1106 => 321,  1103 => 320,  1098 => 317,  1091 => 315,  1084 => 314,  1082 => 313,  1075 => 312,  1071 => 311,  1067 => 310,  1061 => 309,  1055 => 308,  1046 => 307,  1043 => 306,  1039 => 305,  1035 => 304,  1030 => 303,  1027 => 302,  1023 => 300,  1012 => 298,  1007 => 297,  999 => 294,  996 => 293,  993 => 292,  985 => 290,  982 => 289,  977 => 287,  972 => 286,  966 => 284,  963 => 283,  959 => 281,  957 => 280,  953 => 279,  949 => 278,  945 => 276,  942 => 275,  937 => 273,  931 => 270,  928 => 269,  925 => 268,  919 => 266,  917 => 265,  907 => 263,  899 => 261,  897 => 260,  890 => 259,  887 => 258,  877 => 256,  874 => 255,  870 => 253,  864 => 250,  859 => 249,  857 => 248,  846 => 246,  842 => 245,  839 => 244,  836 => 243,  828 => 241,  826 => 240,  823 => 239,  813 => 236,  807 => 234,  804 => 233,  796 => 231,  794 => 230,  791 => 229,  787 => 228,  784 => 227,  778 => 225,  776 => 224,  773 => 223,  770 => 222,  767 => 221,  764 => 220,  761 => 219,  759 => 218,  754 => 215,  730 => 213,  712 => 212,  707 => 209,  701 => 207,  692 => 203,  686 => 200,  681 => 198,  668 => 188,  664 => 187,  656 => 182,  651 => 180,  643 => 175,  639 => 174,  635 => 172,  633 => 171,  629 => 170,  625 => 168,  618 => 164,  613 => 163,  611 => 162,  599 => 161,  596 => 160,  591 => 157,  584 => 155,  575 => 152,  571 => 151,  568 => 150,  564 => 149,  557 => 145,  553 => 143,  549 => 142,  540 => 140,  537 => 139,  526 => 137,  523 => 136,  521 => 135,  517 => 133,  492 => 131,  474 => 130,  462 => 128,  459 => 127,  447 => 125,  444 => 124,  432 => 122,  429 => 121,  427 => 120,  424 => 119,  419 => 116,  407 => 114,  403 => 113,  399 => 112,  393 => 108,  391 => 107,  385 => 105,  380 => 102,  368 => 100,  364 => 99,  360 => 98,  354 => 94,  352 => 93,  349 => 92,  330 => 90,  325 => 89,  309 => 87,  307 => 86,  304 => 85,  294 => 82,  288 => 80,  285 => 79,  277 => 77,  275 => 76,  272 => 75,  267 => 74,  264 => 73,  256 => 67,  250 => 66,  245 => 64,  239 => 61,  235 => 60,  231 => 59,  226 => 56,  224 => 55,  221 => 54,  213 => 48,  210 => 47,  187 => 45,  182 => 44,  162 => 42,  159 => 41,  151 => 38,  148 => 37,  146 => 36,  141 => 35,  138 => 34,  135 => 33,  129 => 31,  127 => 30,  111 => 28,  100 => 26,  96 => 25,  93 => 24,  91 => 23,  86 => 21,  81 => 20,  75 => 18,  73 => 17,  68 => 16,  65 => 15,  62 => 14,  59 => 13,  56 => 12,  53 => 11,  50 => 10,  48 => 9,  43 => 8,  40 => 7,  29 => 5,  25 => 4,  19 => 1,);
+        return array (  2437 => 895,  2396 => 857,  2389 => 853,  2223 => 691,  2220 => 690,  2212 => 684,  2206 => 683,  2197 => 681,  2193 => 680,  2185 => 679,  2177 => 678,  2168 => 676,  2164 => 675,  2136 => 650,  2132 => 648,  2130 => 646,  2129 => 645,  2128 => 644,  2127 => 643,  2126 => 642,  2124 => 641,  2121 => 640,  2118 => 639,  2106 => 629,  2104 => 628,  2098 => 624,  2094 => 622,  2092 => 621,  2089 => 620,  2086 => 619,  2081 => 616,  2079 => 615,  2075 => 613,  2072 => 612,  2056 => 606,  2047 => 605,  2037 => 602,  2030 => 601,  2014 => 598,  2011 => 597,  2009 => 596,  2005 => 594,  2001 => 592,  1995 => 591,  1991 => 589,  1987 => 587,  1984 => 586,  1980 => 585,  1977 => 584,  1974 => 583,  1970 => 581,  1962 => 579,  1956 => 577,  1954 => 576,  1951 => 575,  1949 => 574,  1945 => 573,  1939 => 572,  1934 => 569,  1925 => 567,  1916 => 566,  1913 => 565,  1902 => 563,  1898 => 562,  1883 => 560,  1873 => 559,  1867 => 558,  1861 => 557,  1848 => 556,  1843 => 555,  1835 => 552,  1832 => 551,  1830 => 550,  1825 => 548,  1813 => 546,  1810 => 545,  1801 => 543,  1794 => 542,  1784 => 541,  1780 => 540,  1775 => 539,  1773 => 538,  1768 => 535,  1758 => 532,  1752 => 530,  1749 => 529,  1741 => 527,  1739 => 526,  1736 => 525,  1731 => 524,  1726 => 521,  1714 => 519,  1710 => 518,  1706 => 517,  1700 => 513,  1697 => 512,  1683 => 509,  1676 => 508,  1672 => 507,  1669 => 506,  1667 => 505,  1659 => 502,  1653 => 501,  1649 => 499,  1643 => 497,  1641 => 496,  1637 => 494,  1630 => 492,  1600 => 465,  1594 => 464,  1590 => 463,  1587 => 462,  1581 => 460,  1572 => 458,  1567 => 457,  1565 => 456,  1557 => 454,  1551 => 450,  1540 => 448,  1536 => 447,  1532 => 446,  1526 => 443,  1523 => 442,  1520 => 441,  1515 => 438,  1509 => 437,  1496 => 431,  1489 => 429,  1480 => 428,  1477 => 427,  1464 => 421,  1457 => 419,  1448 => 418,  1445 => 417,  1432 => 411,  1425 => 409,  1416 => 408,  1413 => 407,  1405 => 404,  1397 => 403,  1393 => 402,  1384 => 401,  1381 => 400,  1369 => 397,  1363 => 396,  1354 => 395,  1351 => 394,  1339 => 391,  1333 => 390,  1324 => 389,  1321 => 388,  1316 => 385,  1308 => 383,  1301 => 382,  1299 => 381,  1294 => 380,  1278 => 379,  1272 => 378,  1268 => 376,  1262 => 375,  1258 => 374,  1249 => 373,  1246 => 372,  1241 => 369,  1233 => 367,  1226 => 366,  1224 => 365,  1219 => 364,  1203 => 363,  1197 => 362,  1193 => 360,  1187 => 359,  1183 => 358,  1174 => 357,  1171 => 356,  1166 => 353,  1159 => 351,  1152 => 350,  1150 => 349,  1143 => 348,  1139 => 347,  1135 => 346,  1129 => 345,  1123 => 344,  1114 => 343,  1111 => 342,  1107 => 341,  1103 => 340,  1098 => 339,  1096 => 338,  1092 => 336,  1088 => 334,  1077 => 332,  1072 => 331,  1064 => 328,  1061 => 327,  1058 => 326,  1050 => 324,  1047 => 323,  1042 => 321,  1037 => 320,  1031 => 318,  1028 => 317,  1024 => 315,  1022 => 314,  1018 => 313,  1014 => 312,  1010 => 310,  1008 => 309,  997 => 300,  991 => 299,  987 => 297,  985 => 296,  982 => 295,  980 => 294,  977 => 293,  975 => 292,  972 => 291,  969 => 290,  965 => 289,  957 => 284,  953 => 283,  948 => 280,  945 => 278,  940 => 276,  934 => 273,  931 => 272,  928 => 271,  922 => 269,  920 => 268,  910 => 266,  902 => 264,  900 => 263,  893 => 262,  890 => 261,  880 => 259,  877 => 258,  873 => 256,  867 => 253,  862 => 252,  860 => 251,  849 => 249,  845 => 248,  842 => 247,  839 => 246,  831 => 244,  829 => 243,  826 => 242,  816 => 239,  810 => 237,  807 => 236,  799 => 234,  797 => 233,  794 => 232,  790 => 231,  787 => 230,  781 => 228,  779 => 227,  776 => 226,  773 => 225,  770 => 224,  767 => 223,  764 => 222,  762 => 221,  754 => 215,  730 => 213,  712 => 212,  707 => 209,  701 => 207,  692 => 203,  686 => 200,  681 => 198,  668 => 188,  664 => 187,  656 => 182,  651 => 180,  643 => 175,  639 => 174,  635 => 172,  633 => 171,  629 => 170,  625 => 168,  618 => 164,  613 => 163,  611 => 162,  599 => 161,  596 => 160,  591 => 157,  584 => 155,  575 => 152,  571 => 151,  568 => 150,  564 => 149,  557 => 145,  553 => 143,  549 => 142,  540 => 140,  537 => 139,  526 => 137,  523 => 136,  521 => 135,  517 => 133,  492 => 131,  474 => 130,  462 => 128,  459 => 127,  447 => 125,  444 => 124,  432 => 122,  429 => 121,  427 => 120,  424 => 119,  419 => 116,  407 => 114,  403 => 113,  399 => 112,  393 => 108,  391 => 107,  385 => 105,  380 => 102,  368 => 100,  364 => 99,  360 => 98,  354 => 94,  352 => 93,  349 => 92,  330 => 90,  325 => 89,  309 => 87,  307 => 86,  304 => 85,  294 => 82,  288 => 80,  285 => 79,  277 => 77,  275 => 76,  272 => 75,  267 => 74,  264 => 73,  256 => 67,  250 => 66,  245 => 64,  239 => 61,  235 => 60,  231 => 59,  226 => 56,  224 => 55,  221 => 54,  213 => 48,  210 => 47,  187 => 45,  182 => 44,  162 => 42,  159 => 41,  151 => 38,  148 => 37,  146 => 36,  141 => 35,  138 => 34,  135 => 33,  129 => 31,  127 => 30,  111 => 28,  100 => 26,  96 => 25,  93 => 24,  91 => 23,  86 => 21,  81 => 20,  75 => 18,  73 => 17,  68 => 16,  65 => 15,  62 => 14,  59 => 13,  56 => 12,  53 => 11,  50 => 10,  48 => 9,  43 => 8,  40 => 7,  29 => 5,  25 => 4,  19 => 1,);
     }
 }
 /* {{ header }}*/
@@ -2603,6 +2671,9 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
 /*             </div>*/
 /*           </div>*/
 /*         </div>*/
+/* */
+/* */
+/* */
 /*         {% if column_left or column_right %}*/
 /*           {% set class = 'col-sm-6' %}*/
 /*         {% else %}*/
@@ -2660,6 +2731,37 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
 /*               </div>*/
 /*               <script>Journal.countdown($('.right .countdown'), '{{ date_end }}');</script>*/
 /*             {% endif %}*/
+/* */
+/*             {# muestro tiempos de entrega del producto #}*/
+/* */
+/*               <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">*/
+/*                 <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>*/
+/*                 <meta itemprop="priceCurrency" content="{{ journal2.settings.get('product_price_currency') }}"/>*/
+/*                 <meta itemprop="price" content="{{ journal2.settings.get('product_price') }}"/>*/
+/* */
+/* */
+/*                 <li class="product-price">*/
+/*                   Tiempo Entrega:*/
+/*                   {% for cat in journal2.settings.get('data_categorias') %}*/
+/*                     {% if cat.category_id == '76' %}*/
+/*                         INMEDIATA*/
+/*                     {% elseif cat.category_id == '77' %}*/
+/*                         5 a 10 días*/
+/*                     {% elseif cat.category_id == '85' %}*/
+/*                         15 a 20 días*/
+/*                     {% elseif cat.category_id == '92' %}*/
+/*                         25 a 35 días*/
+/*                     {% endif %}*/
+/*                   {% endfor %}*/
+/*                 </li>*/
+/* */
+/*                 <li class="price-tax">Normalmente cumlimos con dicho tiempo de entrega, pero de todas maneras si querés asegurarte si tenemos en stock y saber con precisión el tiempo,*/
+/*                 nos podes enviar un WhatsApp (+54 9 11 5140 8258)</li>*/
+/* */
+/* */
+/*               </ul>*/
+/* */
+/* */
 /*             {% if price %}*/
 /*               <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">*/
 /*                 <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>*/
@@ -2687,6 +2789,8 @@ class __TwigTemplate_1fb6b8b648e8d00e9ff3e448018aa4911c62d68bf65f7e27e07289c28e7
 /*                 {% endfor %}*/
 /*               </ul>*/
 /*             {% endif %}*/
+/* */
+/* */
 /*             {% if options %}*/
 /*               <div class="options {{ journal2.settings.get('product_page_options_push_classes') }}">*/
 /*                 <h3>{{ text_option }}</h3>*/
