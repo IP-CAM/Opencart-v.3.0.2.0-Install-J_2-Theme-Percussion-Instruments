@@ -2,6 +2,7 @@
 /config.php
 admin/config.php
 storage/cache/
+storage/cache_backups/
 
 
 
