@@ -1,8 +1,10 @@
 .htaccess
 /config.php
 admin/config.php
-
 storage/cache/
+
+
+
 !index.html
 
 download/
