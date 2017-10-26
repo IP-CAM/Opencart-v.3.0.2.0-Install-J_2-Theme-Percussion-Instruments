@@ -1001,3 +1001,31 @@
 2017-10-26 13:40:55 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
 2017-10-26 13:40:56 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
 2017-10-26 13:40:56 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 13:53:18 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 13:53:18 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:06:14 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:06:14 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:06:14 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:06:14 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:06:15 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:06:15 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:06:15 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:06:15 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:07:05 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:07:05 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:07:06 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:07:06 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:07:06 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:07:06 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:07:07 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:07:07 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:07:37 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:07:37 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:08:33 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:08:33 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:08:33 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:08:33 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:08:33 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:08:33 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499
+2017-10-26 14:08:35 - PHP Warning:  getimagesize(/var/www/html/ventas.percu/image/no_image.png): failed to open stream: No such file or directory in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 496
+2017-10-26 14:08:35 - PHP Notice:  Image no_image.png is invalid! in /var/www/html/ventas.percu/system/journal2/classes/journal2_utils.php on line 499

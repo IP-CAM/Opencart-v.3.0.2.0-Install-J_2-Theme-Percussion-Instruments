@@ -285,10 +285,10 @@
 
 
                 <li class="product-price">
-                  Tiempo Entrega:
+
                   {% for cat in journal2.settings.get('data_categorias') %}
                     {% if cat.category_id == '76' %}
-                        INMEDIATA
+                        <p style="background-color:#78c965;">Tiempo Entrega: INMEDIATA</p>
                     {% elseif cat.category_id == '77' %}
                         5 a 10 días
                     {% elseif cat.category_id == '85' %}
