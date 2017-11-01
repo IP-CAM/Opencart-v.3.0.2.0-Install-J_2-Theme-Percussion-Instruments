@@ -277,60 +277,65 @@
             {% endif %}
 
             {# muestro tiempos de entrega del producto #}
+            <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>
+              <meta itemprop="priceCurrency" content="{{ journal2.settings.get('product_price_currency') }}"/>
+              <meta itemprop="price" content="{{ journal2.settings.get('product_price') }}"/>
+              <li class="product-price">
+                {% for cat in journal2.settings.get('data_categorias') %}
+                  {% if cat.category_id == '76' %}
+                      <p style="background-color:#78c965;">Tiempo Entrega: INMEDIATA</p>
+                  {% elseif cat.category_id == '77' %}
+                       <p style="background-color:#78c965;">Tiempo Entrega: 5 a 10 días</p>5 a 10 días
+                  {% elseif cat.category_id == '85' %}
+                       <p style="background-color:#78c965;">Tiempo Entrega: 15 a 20 días</p>
+                  {% elseif cat.category_id == '92' %}
+                       <p style="background-color:#f4b52f;">Tiempo Entrega: 25 a 35 días</p>
+                  {% endif %}
+                {% endfor %}
+              </li>
+              <li class="price-tax">Normalmente cumplimos con dicho tiempo de entrega, pero de todas maneras si querés asegurarte si tenemos en stock y saber con precisión el tiempo,
+              nos podes enviar un WhatsApp (+54 9 11 5140 8258)</li>
+            </ul>
 
-              <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>
-                <meta itemprop="priceCurrency" content="{{ journal2.settings.get('product_price_currency') }}"/>
-                <meta itemprop="price" content="{{ journal2.settings.get('product_price') }}"/>
-
-
-                <li class="product-price">
-
-                  {% for cat in journal2.settings.get('data_categorias') %}
-                    {% if cat.category_id == '76' %}
-                        <p style="background-color:#78c965;">Tiempo Entrega: INMEDIATA</p>
-                    {% elseif cat.category_id == '77' %}
-                         <p style="background-color:#78c965;">Tiempo Entrega: 5 a 10 días</p>5 a 10 días
-                    {% elseif cat.category_id == '85' %}
-                         <p style="background-color:#78c965;">Tiempo Entrega: 15 a 20 días</p>
-                    {% elseif cat.category_id == '92' %}
-                         <p style="background-color:#f4b52f;">Tiempo Entrega: 25 a 35 días</p>
-                    {% endif %}
-                  {% endfor %}
-                </li>
-
-                <li class="price-tax">Normalmente cumlimos con dicho tiempo de entrega, pero de todas maneras si querés asegurarte si tenemos en stock y saber con precisión el tiempo,
-                nos podes enviar un WhatsApp (+54 9 11 5140 8258)</li>
-
-
-              </ul>
+            {# link a mercadopago #}
+            <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <a href="{{ journal2.settings.get('product_mpn') }}">
+                  <img src="image/data/formas-pago/logo-mercadopago.png" />
+                </a>
+                <p></p>
+                <p>
+                  <strong>Pagalo en cuotas sin interes</strong> y tené ya tu instrumento preferido! <strong>Hace click en la imágen de mercadopago</strong> para comprarlo ya! Al precio publicado
+                  se agrega un 6% que es la comisión de mercadopago. Cualquier cosa nos consultás.
+                </p>
+            </ul>
 
 
             {% if price %}
               <ul class="list-unstyled price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>
-                <meta itemprop="priceCurrency" content="{{ journal2.settings.get('product_price_currency') }}"/>
-                <meta itemprop="price" content="{{ journal2.settings.get('product_price') }}"/>
-                {% if journal2.settings.get('product_in_stock') == 'yes' %}
-                  <link itemprop="availability" href="http://schema.org/InStock"/>
-                {% endif %}
-                {% if not special %}
-                  <li class="product-price">{{ price }}</li>
-                {% else %}
-                  <li class="price-old">{{ price }}</li>
-                  <li class="price-new">{{ special }}</li>
-                {% endif %}
-                {% if tax %}
-                  <li class="price-tax">{{ text_tax }} {{ tax }}</li>
-                {% endif %}
-                {% if points %}
-                  <li class="reward">
-                    <small>{{ text_points }} {{ points }}</small>
-                  </li>
-                {% endif %}
-                {% for discount in discounts %}
-                  <li class="discounts">{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
-                {% endfor %}
+                  <meta itemprop="itemCondition" content="http://schema.org/NewCondition"/>
+                  <meta itemprop="priceCurrency" content="{{ journal2.settings.get('product_price_currency') }}"/>
+                  <meta itemprop="price" content="{{ journal2.settings.get('product_price') }}"/>
+                  {% if journal2.settings.get('product_in_stock') == 'yes' %}
+                    <link itemprop="availability" href="http://schema.org/InStock"/>
+                  {% endif %}
+                  {% if not special %}
+                    <li class="product-price">{{ price }}</li>
+                  {% else %}
+                    <li class="price-old">{{ price }}</li>
+                    <li class="price-new">{{ special }}</li>
+                  {% endif %}
+                  {% if tax %}
+                    <li class="price-tax">{{ text_tax }} {{ tax }}</li>
+                  {% endif %}
+                  {% if points %}
+                    <li class="reward">
+                      <small>{{ text_points }} {{ points }}</small>
+                    </li>
+                  {% endif %}
+                  {% for discount in discounts %}
+                    <li class="discounts">{{ discount.quantity }}{{ text_discount }}{{ discount.price }}</li>
+                  {% endfor %}
               </ul>
             {% endif %}
 

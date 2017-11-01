@@ -45,6 +45,7 @@ class ControllerJournal2ProductTabs extends Controller {
         // acá tengo el mpn que es donde quiero poner la url de mercadopago para pagar por ahí
         $product_info = $this->model_catalog_product->getProduct($product_id);
 
+
         $categories = $this->model_catalog_product->getCategories($product_info['product_id']);
 
 
@@ -140,6 +141,7 @@ class ControllerJournal2ProductTabs extends Controller {
         $this->journal2->settings->set('additional_product_description_bottom', $tab_desc_bottom);
         $this->journal2->settings->set('additional_product_description_image', $tab_image);
         $this->journal2->settings->set('additional_product_enquiry', $tab_enquiry);
+        $this->journal2->settings->set('product_mpn', $product_info['mpn']); // cargo el mpn que va a ser la url de mercadopago
 
         Journal2::stopTimer('ProductTabs');
     }
